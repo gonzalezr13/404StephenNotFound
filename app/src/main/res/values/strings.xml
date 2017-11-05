@@ -4,4 +4,14 @@
     <string name="player2">Player 2</string>
     <string name="player3">Player 3</string>
     <string name="player4">Player 4</string>
+
+    <!--PlayerStatus-->
+    <string name="not_started">Waiting for Game to Start</string>
+    <string name="dealing">Cards are being Dealt</string>
+    <string name="waiting">Waiting</string>
+    <string name="betting">Betting</string>
+    <string name="lost">You Lost!</string>
+    <string name="won">You Won!</string>
+    <string name="stay_in">Staying In</string>
+    <string name="fold">Folding</string>
 </resources>

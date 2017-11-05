@@ -1,34 +1,36 @@
 package cs.ecu.edu.a404_of_a_kind;
 
-import java.security.PrivateKey;
-import java.util.ArrayList;
-import java.util.Random;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created by Stephen on 10/24/2017.
  */
 
 public class Deck {
-    private ArrayList<Card> mCards;
-    private ArrayList<Card> mPulledCards;
-    private Random mRandom;
+    private static List<Card> mCards;
 
     public Deck(){
-        mRandom = new Random();
-        mPulledCards = new ArrayList<Card>();
-        mCards = new ArrayList<Card>(Card.Suits.values().length * Card.Ranks.values().length);
-        reset();
+        initDeck();
+        Collections.shuffle(mCards);
+        dealCard();
     }
 
-    public void reset(){
-        mPulledCards.clear();
-        mCards.clear();
+    public Deck(List<Card> cards){
+        mCards = cards;
+    }
 
-        for (Card.Suits s : Card.Suits.values()){
-            for (Card.Ranks r : Card.Ranks.values()){
-                Card c = new Card(s, r);
-                mCards.add(c);
-            }
-        }
+    public void initDeck(){
+        mCards = new LinkedList<Card>();
+        mCards.addAll(Arrays.asList(Card.values()));
+    }
+
+    public static Card dealCard(){
+        return mCards.remove(0);
+    }
+    public List<Card> exportDeck(){
+        return mCards;
     }
 }

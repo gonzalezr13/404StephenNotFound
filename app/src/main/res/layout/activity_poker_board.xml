@@ -30,7 +30,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:scaleType="centerInside"
-        android:src="@drawable/deck"
+        android:src="@drawable/deck_404"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_width="100dp"
@@ -60,36 +60,36 @@
             android:id="@+id/card1"
             android:layout_weight="1"
             android:scaleType="centerInside"
-            android:src="@drawable/wow_back"
-            android:layout_width="wrap_content"
+            android:src="@drawable/final_back"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <ImageView
             android:id="@+id/card2"
             android:layout_weight="1"
             android:scaleType="centerInside"
-            android:src="@drawable/wow_back"
-            android:layout_width="wrap_content"
+            android:src="@drawable/final_back"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <ImageView
             android:id="@+id/card3"
             android:layout_weight="1"
             android:scaleType="centerInside"
-            android:src="@drawable/wow_back"
-            android:layout_width="wrap_content"
+            android:src="@drawable/final_back"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <ImageView
             android:id="@+id/card4"
             android:layout_weight="1"
             android:scaleType="centerInside"
-            android:src="@drawable/wow_back"
-            android:layout_width="wrap_content"
+            android:src="@drawable/final_back"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <ImageView
             android:id="@+id/card5"
             android:layout_weight="1"
             android:scaleType="centerInside"
-            android:src="@drawable/wow_back"
-            android:layout_width="wrap_content"
+            android:src="@drawable/final_back"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
 

@@ -35,7 +35,7 @@ public enum Card {
     JACK_CLUBS(JACK, CLUBS, 37, "Jc", R.drawable.clubs_11),
     QUEEN_CLUBS(QUEEN, CLUBS, 41, "Qc", R.drawable.clubs_12),
     KING_CLUBS(KING, CLUBS, 45, "Kc", R.drawable.clubs_13),
-    ACE_CLUBS(ACE, CLUBS, 49, "Ac", R.drawable.clubs_01),
+    ACE_CLUBS(ACE, CLUBS, 49, "Ac", R.drawable.clubs_ace),
 
     TWO_DIAMOND(TWO, DIAMONDS, 2, "2d", R.drawable.diamonds_two),
     THREE_DIAMOND(THREE, DIAMONDS, 6, "3d", R.drawable.diamonds_three),
@@ -49,7 +49,7 @@ public enum Card {
     JACK_DIAMOND(JACK, DIAMONDS, 38, "Jd", R.drawable.diamonds_11),
     QUEEN_DIAMOND(QUEEN, DIAMONDS, 42, "Qd", R.drawable.diamonds_12),
     KING_DIAMOND(KING, DIAMONDS, 46, "Kd", R.drawable.diamonds_13),
-    ACE_DIAMOND(ACE, DIAMONDS, 50, "Ad", R.drawable.diamonds_01),
+    ACE_DIAMOND(ACE, DIAMONDS, 50, "Ad", R.drawable.diamonds_ace),
 
     TWO_HEARTS(TWO, HEARTS, 3, "2h", R.drawable.hearts_two),
     THREE_HEARTS(THREE, HEARTS, 7, "3h", R.drawable.hearts_three),
@@ -63,7 +63,7 @@ public enum Card {
     JACK_HEARTS(JACK, HEARTS, 39, "Jh", R.drawable.hearts_11),
     QUEEN_HEARTS(QUEEN, HEARTS, 43, "Qh", R.drawable.hearts_12),
     KING_HEARTS(KING, HEARTS, 47, "Kh", R.drawable.hearts_13),
-    ACE_HEARTS(ACE, HEARTS, 51, "Ah", R.drawable.hearts_01),
+    ACE_HEARTS(ACE, HEARTS, 51, "Ah", R.drawable.hearts_ace),
 
     TWO_SPADES(TWO, SPADES, 4, "2s", R.drawable.spades_two),
     THREE_SPADES(THREE, SPADES, 8, "3s", R.drawable.spades_three),
@@ -77,7 +77,7 @@ public enum Card {
     JACK_SPADES(JACK, SPADES, 40, "Js", R.drawable.spades_11),
     QUEEN_SPADES(QUEEN, SPADES, 44, "Qs", R.drawable.spades_12),
     KING_SPADES(KING, SPADES, 48, "Ks", R.drawable.spades_13),
-    ACE_SPADES(ACE, SPADES, 52, "As", R.drawable.spades_01);
+    ACE_SPADES(ACE, SPADES, 52, "As", R.drawable.spades_ace);
 
     private final Rank mRanks;
     private final Suit mSuits;

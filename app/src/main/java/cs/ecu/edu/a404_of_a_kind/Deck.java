@@ -1,5 +1,7 @@
 package cs.ecu.edu.a404_of_a_kind;
 
+import android.content.Context;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
@@ -10,7 +12,15 @@ import java.util.List;
  */
 
 public class Deck {
+    private static Deck sDeck;
     private static List<Card> mCards;
+
+    public static Deck getDeck(){
+        if (sDeck == null){
+            sDeck = new Deck();
+        }
+        return sDeck;
+    }
 
     public Deck(){
         initDeck();
@@ -27,6 +37,7 @@ public class Deck {
         mCards.addAll(Arrays.asList(Card.values()));
     }
 
+    public static Card drawCard() {return mCards.get(0);}
     public static Card dealCard(){
         return mCards.remove(0);
     }

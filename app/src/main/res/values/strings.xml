@@ -14,4 +14,5 @@
     <string name="won">You Won!</string>
     <string name="stay_in">Staying In</string>
     <string name="fold">Folding</string>
+    <string name="title_activity_player_hand">PlayerHandActivity</string>
 </resources>
